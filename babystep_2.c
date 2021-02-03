@@ -148,6 +148,7 @@ int vdcpto(char* file_path,char* file_name)
 	array[0].start+=1;
 	array[0].size-=k;
 	writediskblock(fd,0,array);
+	return 1;
 }
 int vdcpfrom(char *filepath,char *filename)
 {
